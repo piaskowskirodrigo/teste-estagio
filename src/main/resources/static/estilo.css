@@ -1,0 +1,120 @@
+body {
+    background-image: url(img/maps.PNG);
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Adiciona essa linha */
+
+  }
+  
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .circle {
+    width: 1.4vw;
+    height: 1.4vw;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .circle:hover .tooltip {
+    visibility: visible;
+  }
+  
+  #circle1 {
+    top: 68.5vh;
+    left: 36.3vw;
+  }
+  
+  #circle2 {
+    top: 65vh;
+    left: 45vw;
+  }
+  
+  #circle3 {
+    top: 26vh;
+    left: 43vw;
+  }
+  
+  .tooltip-title {
+    text-align: center;
+  }
+  
+  .tooltip-list {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+
+
+
+  .back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #000;
+}
+
+
+.navbar {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    text-align: center;
+    z-index: 999; /* Certifique-se de que a barra de navegação esteja acima dos outros elementos */
+  
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 22px; /* ajuste o tamanho da fonte */
+    line-height: 2; /* ajuste a altura do elemento */
+    margin: 0 10px; /* ajuste as margens horizontal */
+    padding: 0 10px; /* ajuste o preenchimento horizontal */
+  }
+  
+  .navbar a:hover {
+    background-color: white;
+    color: blue;
+  }
